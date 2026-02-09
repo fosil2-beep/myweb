@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A responsive portfolio website showcasing my web development skills, projects, and professional background. Learn more about my experience in HTML, CSS, JavaScript, and responsive design.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webpage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>My Website</h1>
+
+            <button
+                class="hamburger"
+                aria-label="Toggle menu"
+                aria-expanded="false"
+                aria-controls="primary-menu"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul id="primary-menu" aria-hidden="false">
+                <li><a href="#my-website">Welcome</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="my-website">
+            <h2>Welcome to my Webpage</h2>
+            <p>Greetings.</p>
+        </section>
+
+        <section id="about-me">
+            <h2>About Me</h2>
+            <p>I am a very hard-working guy trying to acquire new skills that will allow me to open a different career path. I'm very excited about everything I'm learning in the world of web design, and I hope to become a good professional who can achieve their goals, both in terms of learning and career.</p>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <h2>Projects</h2>
+
+            <div class="filter-buttons">
+                <button class="filter-button active" data-filter="all">All</button>
+                <button class="filter-button" data-filter="web">Web</button>
+                <button class="filter-button" data-filter="ecommerce">E-commerce</button>
+                <button class="filter-button" data-filter="blog">Blog</button>
+            </div>
+
+            <div class="project-list">
+                <div class="project-card project" data-category="web">
+                    <h3>Project 1: Portfolio Website</h3>
+                    <p>A clean, responsive portfolio site.</p>
+                    <img src="https://placehold.co/600x400/png?text=Portfolio+Website" alt="Portfolio project preview">
+                </div>
+
+                <div class="project-card project" data-category="ecommerce">
+                    <h3>Project 2: E-commerce Site</h3>
+                    <p>A modern shop front and checkout flow.</p>
+                    <img src="https://placehold.co/600x400/png?text=E-commerce+Site" alt="E-commerce project preview">
+                </div>
+
+                <div class="project-card project" data-category="blog">
+                    <h3>Project 3: Blog Platform</h3>
+                    <p>A blogging platform with clean typography.</p>
+                    <img src="https://placehold.co/600x400/png?text=Blog+Platform" alt="Blog project preview">
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Responsive Design</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact</h2>
+            <form name="contact" novalidate>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Site. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
